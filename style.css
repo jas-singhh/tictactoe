@@ -1,0 +1,111 @@
+:root {
+    --bg-colour: #00072D;
+    --secondary-colour: #001C55;
+    --accent-colour: #A6E1FA;
+    --accent-hovered-colour: #a6e1fa9c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-colour);
+    text-align: center;
+    color: white    ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.container {
+    height: 80vh;
+    background-color: var(--secondary-colour);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 14px;
+}
+
+.game {
+    height: 60vmin;
+    background-color: var(--secondary-colour);
+    display: flex;
+    width: 60vmin;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    font-size: 2.5rem;
+    background-color: #f0f0f021;
+    color: white;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: .75rem 2.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--accent-colour);
+    font-size: 1.1rem;
+    border-radius: 14px;
+    transition:all .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hovered-colour);
+}
+
+/* POPUP */
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-wrapper {
+    /* width: 468px;
+    height: 468px; */
+    background-color: #fefefe;
+    color: black;
+    padding: 4rem;
+    border-radius: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.hide {
+    display: none;
+}
